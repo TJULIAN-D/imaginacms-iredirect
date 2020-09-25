@@ -19,7 +19,7 @@ class CreateIredirectRedirectsTable extends Migration
             $table->text('from');
             $table->text('to');
             $table->text('redirect_type');
-            $table->text('options')->default('')->nullable();
+            $table->text('options')->nullable();
             // Your fields
             $table->timestamps();
         });

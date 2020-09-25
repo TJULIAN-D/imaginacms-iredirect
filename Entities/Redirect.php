@@ -3,14 +3,13 @@
 namespace Modules\Iredirect\Entities;
 
 use Illuminate\Database\Eloquent\Model;
-use Modules\Bcrud\Support\Traits\CrudTrait;
 use Modules\Iredirect\Entities\Feature;
 use Laracasts\Presenter\PresentableTrait;
 use Modules\Iredirect\Presenters\RedirectPresenter;
 
 class Redirect extends Model
 {
-    use CrudTrait,  PresentableTrait;
+    use  PresentableTrait;
 
     protected $table = 'iredirect__redirects';
 
